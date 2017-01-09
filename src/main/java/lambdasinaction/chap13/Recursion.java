@@ -6,14 +6,15 @@ import java.util.stream.LongStream;
 public class Recursion {
 
     public static void main(String[] args) {
-        System.out.println(factorialIterative(5));
-        System.out.println(factorialRecursive(5));
-        System.out.println(factorialStreams(5));
-        System.out.println(factorialTailRecursive(5));
+        int n = 20;
+        System.out.println(factorialIterative(n));
+        System.out.println(factorialRecursive(n));
+        System.out.println(factorialStreams(n));
+        System.out.println(factorialTailRecursive(n));
     }
 
-    public static int factorialIterative(int n) {
-        int r = 1;
+    public static long factorialIterative(int n) {
+        long r = 1;
         for (int i = 1; i <= n; i++) {
             r*=i;
         }

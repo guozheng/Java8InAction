@@ -15,10 +15,11 @@ public class BestPriceFinderMain {
     }
 
     private static void execute(String msg, Supplier<List<String>> s) {
+        System.out.println("========== START processing: " + msg + " =============");
         long start = System.nanoTime();
         System.out.println(s.get());
         long duration = (System.nanoTime() - start) / 1_000_000;
-        System.out.println(msg + " done in " + duration + " msecs");
+        System.out.println("========== DONE processing: " + msg + ", duration: " + duration + " ms =============");
     }
 
 }
