@@ -13,11 +13,11 @@ public class MeaningOfThis
 				System.out.println(this.value);
 			}
 		};
-		r.run(); 
+		r.run();
 	}
 	public static void main(String...args)
 	{       
 		MeaningOfThis m = new MeaningOfThis();
-		m.doIt(); // ???   
+		m.doIt(); // should print 5
 	}
 }
